@@ -6,41 +6,48 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- nav bar started -->
-    <div class="nav-bar">
-        <div class="logo">
-            <h1><span class="nav-bar-span1">MUS</span><span class="nav-bar-span2">TAFA.</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
 
-    </div>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MUS<span>TAFA.</span></h2>
 
-
-    <!-- nav bar ended -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-    <!-- home section started -->
-    <div class="home" id="Home">
-        <div class="home-content">
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+
+        <div class="home-content reveal-left">
             <h4>HELLO, WELCOME TO MY WEBSITE</h4>
 
-            <h1>I'm <span class="home-span">MUSTAFA</span></h1>
+            <h1>I'm <span>MUSTAFA</span></h1>
+
             <h2>Frontend Developer</h2>
 
-            <p>I create beautiful and modern websites using HTML and CSS. I love learning new <br>things, exploring creativity and developing my skills</p>
-            <a href="#Home">Explore More</a>
+            <p>
+                I create beautiful and modern websites using
+                HTML and CSS. I love learning new things,
+                exploring creativity and developing my skills.
+            </p>
+
+            <a href="#about" class="btn">Explore More</a>
         </div>
-        <div class="home-img">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfeGEzgss0xzInqXdkmLyMo3rtp_zuBLA4Bk7Hk7ivQg&s=10" alt="">
+
+        <div class="home-image reveal-right">
+            <div class="circle">
+                <img src="https://img.magnific.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+            </div>
         </div>
-    </div>
-     <!-- home section ended -->
-</body>
-</html>
+
+    </section>
