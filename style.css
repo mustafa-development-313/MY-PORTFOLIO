@@ -137,3 +137,33 @@ section {
     border-radius: 50%;
     object-fit: cover;
 }
+
+/* ===== ABOUT ===== */
+
+.about {
+    background: #111122;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+}
+
+.about-content h1,
+.skills h1,
+.projects h1,
+.contact h1 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.about-content h2 {
+    color: #c084fc;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #b8b8c8;
+    line-height: 2;
+    margin-bottom: 20px;
+}
