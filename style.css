@@ -257,3 +257,188 @@ section {
     color: #b8b8c8;
     line-height: 1.7;
 }
+
+
+/* ===== CONTACT ===== */
+
+.contact {
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact > p {
+    color: #b8b8c8;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background: #1b1b30;
+    border: 1px solid #33334b;
+    padding: 35px 60px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    line-height: 2.5;
+}
+
+.contact-box h3 {
+    color: #c084fc;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #101020;
+    text-align: center;
+    padding: 25px;
+    color: #9999aa;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 850px) {
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 4%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 130px 7% 60px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .circle {
+        width: 210px;
+        height: 210px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content h1,
+    .skills h1,
+    .projects h1,
+    .contact h1 {
+        font-size: 35px;
+    }
+
+    .contact-box {
+        padding: 25px;
+    }
+}
+
+
+
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+
+/* Come from bottom */
+.reveal-up {
+    animation: revealUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Come from left */
+.reveal-left {
+    animation: revealLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+@keyframes revealLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Come from right */
+.reveal-right {
+    animation: revealRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+@keyframes revealRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Zoom effect */
+.reveal-zoom {
+    animation: revealZoom linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+@keyframes revealZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
